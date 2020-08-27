@@ -10,13 +10,14 @@ class Timer{
         clearTimeout(this.timer);
     }
 
-    restart(){
+    restart(timeout){
+        if(timeout) this.timeout = timeout;
         clearTimeout(this.timer);
         setTimeout(this.callback, this.timeout, ...this.args);
     }
 }
 
-module.exports = function(timeout, callback, ...args){
+module.exports = function fgTimer(timeout, callback, ...args){
     // 
     if(callback) return new Timer(...arguments);
     // 
