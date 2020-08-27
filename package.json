@@ -1,6 +1,6 @@
 {
   "name": "fg-timer",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Timer",
   "main": "main.js",
   "scripts": {
